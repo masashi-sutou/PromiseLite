@@ -15,4 +15,4 @@ PromiseLite.resolve(10)
 ```
 
 # Licence
-MIT
+[MIT](https://github.com/masashi-sutou/PromiseLite/blob/master/LICENSE)
