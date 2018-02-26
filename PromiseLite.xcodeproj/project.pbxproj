@@ -10,6 +10,7 @@
 		0BE55C93204453440076E4D5 /* PromiseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE55C89204453440076E4D5 /* PromiseLite.framework */; };
 		0BE55C98204453440076E4D5 /* PromiseLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE55C97204453440076E4D5 /* PromiseLiteTests.swift */; };
 		0BE55C9A204453440076E4D5 /* PromiseLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BE55C8C204453440076E4D5 /* PromiseLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BE55CA42044536A0076E4D5 /* PromiseLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE55CA32044536A0076E4D5 /* PromiseLite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		0BE55C92204453440076E4D5 /* PromiseLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PromiseLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE55C97204453440076E4D5 /* PromiseLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseLiteTests.swift; sourceTree = "<group>"; };
 		0BE55C99204453440076E4D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BE55CA32044536A0076E4D5 /* PromiseLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseLite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				0BE55C8C204453440076E4D5 /* PromiseLite.h */,
+				0BE55CA32044536A0076E4D5 /* PromiseLite.swift */,
 				0BE55C8D204453440076E4D5 /* Info.plist */,
 			);
 			path = PromiseLite;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					0BE55C88204453440076E4D5 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					0BE55C91204453440076E4D5 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BE55CA42044536A0076E4D5 /* PromiseLite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		0BE55C9E204453440076E4D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.masashi-sutou.PromiseLite";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +362,7 @@
 		0BE55C9F204453440076E4D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +384,7 @@
 		0BE55CA1204453440076E4D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E8L2964G6Z;
 				INFOPLIST_FILE = PromiseLiteTests/Info.plist;
@@ -390,6 +399,7 @@
 		0BE55CA2204453440076E4D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E8L2964G6Z;
 				INFOPLIST_FILE = PromiseLiteTests/Info.plist;
